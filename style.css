@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: auto;
+  
+}
+.principal-header{
+    background-image: url(assets/star\ uó\ topo@2x.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 83vh;
+    width: 100%;
+    position: relative;
+
+}
+.principal-header-figures{
+  display: flex;
+  height: 50%;
+}
+.principal-header-figures figure{
+    display: flex;
+    width: min-content;
+    max-width: min-content;
+}
+.star-img{
+    position: absolute;
+    top: 54%;
+    left: 19%;
+    width: max-content;
+
+}
+.wars-img{
+    position: absolute;
+    top: 54%;
+    left: 64.8%;
+    width: max-content;
+}
+.kylo-img{
+    position: absolute;
+    left: 9.9%;
+    width: 70vw;
+
+}
+.g4-img{
+    position: absolute;
+    right: 11%;
+    bottom: 2%;
+}
+.secondary-header{
+    background-image: url(assets/sta_uo_robot@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 145vh;
+}
+@media (max-width: 1440px){
+    .star-img{
+        width: 25%;
+        left: 18%;
+    }
+    .wars-img{
+        width: 25%;
+    }
+    .kylo-img{
+        width: 70%;
+    }
+    .g4-img{
+        width: 10%;
+        right:11% ;
+    }
+}
+@media (max-width: 1024px){
+    .principal-header{
+        height: 60vh;
+    }
+}
+@media (max-width: 960px){
+    .principal-header{
+        height: 35vh;
+    }
+    .g4-img {
+       width: 17%;
+       right: 7%;
+       bottom: -10%;
+    }
+}
+@media (max-width: 500px){
+    .principal-header{
+        height: 25vh;
+    }
+}

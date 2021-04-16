@@ -64,6 +64,7 @@ header{
     top: 78%;
     right: 12%;
     width: 9vw;
+    z-index: 10;
 }
 @media (max-width:768px){
     .g4-img{

@@ -3,11 +3,23 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: 63,5%;
 }
+@font-face {
+    font-family:"Gilroy" ;
+    src: url(assets/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Sovereign";
+    src: url(assets/Sovereign.otf);
+}
+               /* HEADER */
+
 header{
     height: auto;
   
 }
+/* PRINCIPAL HEADER : STAR WARS AND THE SITH IMAGE */
 .principal-header{
     background-image: url(assets/star\ uó\ topo@2x.png);
     background-repeat: no-repeat;
@@ -59,6 +71,9 @@ header{
         right: 7%;
     }
 }
+
+/* SECONDARY HEADER - HEADER BOTTOM : ABOUT*/
+
 .secondary-header{
     background-image: url(assets/sta_uo_robot@2x.png);
     background-repeat: no-repeat;
@@ -76,23 +91,48 @@ header{
     content: "";
     border: #707070 solid 2.7px;
     background-color: #707070;
-    width: 76.5%;
+    width: 77%;
     height: 0.5px;
     position: absolute;
     bottom: -20%;
-    left: 15%;
-
+    left: 14%;
 }
 .red-box{
+    background-image: url(assets/strom\ trupe\ red.png);
     position: absolute;
     top: -4%;
-    left: 15%;
+    left: 14%;
     z-index: 9;
-
-   
-}
-.red-box img {
     width: 21vw;
+    height: 29vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.red-box-h2{
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 2.5vw;
+   font-weight: 600;
+   width: 50%;
+   height: 33%;
+}
+.red-box-paragraph{
+    font-weight: 300;
+    font-size: 1vw;
+    width: 85%;
+    height: 33%;
+}
+.red-box-button{
+    font-size: 1vw;
+    color: #fff;
+    background-color: rgb(255,255,255, 0);
+    width: 10vw;
+    height: 2.5vw;
+    border: white solid 2px;
+    border-radius: 4px;
 }
 
 .about-game{
@@ -108,6 +148,8 @@ header{
     width: 49vw;
 }
 
+/* HEADER BOTTOM 769PX */
+
 @media (max-width:769px){
     .secondary-header{
         height: 80vh;
@@ -117,7 +159,10 @@ header{
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
-        height: 200vh;
+        height: 130vh;
+    }
+    .header-bottom::after{
+        bottom: 0%;
     }
     .about-game-mobile {
         display: flex;
@@ -130,20 +175,32 @@ header{
     }
     .about-game-mobile img {
         width: 80%;
+        margin-top: 2rem;
+
     }
     .red-box{
         position: static;
         height: 60vh;
-        display: flex;
-        align-items: flex-start;
-        margin-top: 5rem;
-        
-    }
-    .red-box img {
+        margin-top: 15%;
+        margin-right: 6%;
         width: 50vw;
-        margin-right: 3rem;
     }
-    @media (max-width:440px){
+    .red-box-h2{
+        font-size: 5vw;
+    }
+    .red-box-paragraph{
+        font-size: 2vw;
+    }
+    .red-box-button{
+        font-size: 2vw;
+        width: 20vw;
+        height: 5vw;
+    }
+}
+
+/* HEADER BOTTOM 440PX */
+
+@media (max-width:440px){
         .secondary-header{
             height: 80vh;
         }
@@ -152,34 +209,151 @@ header{
             flex-direction: column;
             align-items: flex-end;
             justify-content: flex-start;
-            height: 200vh;
+            height: 120vh;
         }
         .about-game-mobile {
             display: flex;
             width: 100vw;
             margin-top: 2rem;
-            margin-right: 0;
+            margin-right: 6%;
         }
         .about-game {
             display: none;
         }
         .about-game-mobile img {
-            margin: 1rem;
-            width: 90%;
+            width: 83%;
         }
         .red-box{
-            position: static;
+            width: 60vw;
             height: 50vh;
-            display: flex;
-            align-items: flex-start;
             margin-top: 12%;
-            
-            
         }
         .red-box img {
             width: 60vw;
-            margin-left: auto;
-            margin-right: 1rem;
         }
+        .red-box-h2{
+            font-size: 7vw;
+        }
+        .red-box-paragraph{
+            font-size: 2.8vw;
+        }
+        .red-box-button{
+            font-size: 2.8vw;
+            width: 28vw;
+            height: 7vw;
+        }
+}
+
+/* SECONDARY HEADER - STRUCTURE-BOX   */
+
+.structure-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 57vw;
+}
+.sith2-img{
+    margin-left: 30%;
+    width: 43vw;
+}
+.sith2{
+    margin-left: 3%;
+    display: flex;
+}
+.rey{
+    margin-right: 8%;
+}
+.rey-img{
+    margin-top: 22%;
+    width: 21vw;
+}
+.structure-text{
+    height: 59%;
+    width: 27%;
+}
+.h2-first{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7vw;
+    display: inline-block;
+    text-align: right;
+    font-weight:600;
+    width: 27vw;
+    height: 7%;
+    line-height: 0.5;
+}
+.h2-de{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7vw;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin-left: 40%;
+    font-weight: 600;
+    height: 7%;
+}
+.h2-second{
+    font-family: "Sovereign";
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    display:inline-block;
+    text-align: right;
+    font-weight: 700;
+    height: 15%;
+    width: 30%;
+}
+.structure-text p {
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 2.4;
+    font-size: 1.5vw;
+    width: 27vw;
+    cursor: pointer;
+}
+.structure-text p:hover{
+    color:#fff;
+    background-color: #D74430;
+}
+
+/* STRUCTURE-BOX 769PX */
+
+@media (max-width:769px){
+    .structure-box{
+        justify-content: space-between;
+    }
+
+    .sith2-img{ 
+        width: 50vw;
+    }
+    .sith2{
+        margin: 0;
+        justify-content: flex-start;
+        width: 5vw;
+    }
+    .rey{
+        width: 20vw;
+    }
+    .rey-img {
+        width: 25VW;
+    }
+    .h2-first{
+        font-size: 4vw;
+        width: 40vw;
+    }
+    .h2-de{
+        font-size: 4vw;
+    }
+    .h2-second{
+        font-size: 3.8vw;
+    }
+    .structure-text{
+        width: 40vw;
+        height: 80%;
+        margin-left: 30vw;
+    }
+    .structure-text p {
+        font-size: 1.8vw;
+        width: 38vw;
     }
 }

@@ -19,11 +19,13 @@ header{
     height: auto;
 }
 
-
-
 main{
     background-color: #2D2D2D;
     
+}
+
+footer{
+    position: relative;
 }
 /* PRINCIPAL HEADER : STAR WARS AND THE SITH IMAGE */
 .principal-header{
@@ -216,7 +218,7 @@ main{
             flex-direction: column;
             align-items: flex-end;
             justify-content: flex-start;
-            height: 120vh;
+            max-height: 112vh;
         }
         .about-game-mobile {
             display: flex;
@@ -328,6 +330,10 @@ main{
 @media (max-width:769px){
     .structure-box{
         justify-content: space-between;
+        height: 50vh;
+
+        display: flex;
+        
     }
 
     .sith2-img{ 
@@ -367,20 +373,25 @@ main{
 
 /* ATRIBUTTES --- MAIN --- */
 
+.atributtes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 .atributtes-box{
     display: flex;
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .atributtes h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 2.6vw ;
     font-weight: 900;
-    margin-left: 15%;
     height: 17vw;
     padding-top: 10vw;
+    margin-right: 60%;
 }
 .principal-figure{
     width: 50%;
@@ -388,6 +399,7 @@ main{
 }
 .principal-figure-img {
     width: 100%;
+    height: 100%;
     
 }
 .smaller-figure{
@@ -419,7 +431,7 @@ main{
 @media (max-width:769px){
     .atributtes-box{
         flex-direction: column;
-        height: 200vh;
+        
     }
     .atributtes h2 {
         text-align: center;
@@ -443,6 +455,7 @@ main{
     }
     .smaller-figure img {
         width: 100%;
+        height: 100%;
         position: unset;
         
     }
@@ -463,4 +476,52 @@ main{
     header{
         height: 170vh;
     }
+}
+
+.hierarchy{
+    width: 85%;
+    margin-top: 3%;
+    border: lawngreen;
+}
+.hierarchy img {
+    width: 100%;
+}
+@media (max-width: 769px){
+    .hierarchy {
+        width: 100%;
+    }
+}
+.hierarchy-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hierarchy-text p{
+    color:#fff;
+    text-align: right;
+    font-weight: 300;
+    font-size: 1vw;
+    width:  53%;
+}
+.how-to-play{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 25vw;
+   
+}
+.how-to-play-text h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.7vw;
+    font-family: "Sovereign";
+    font-weight: 400;
+    text-align: left;
+    width: 55vw;
+}
+
+.black-cloack{
+    position: absolute;
+    top: -25vw;
+    left: 7vw;
 }

@@ -169,7 +169,8 @@ main{
         height: 122vh;
     }
     .header-bottom::after{
-        bottom: 0%;
+        bottom: -2%;
+        
     }
     .about-game-mobile {
         display: flex;
@@ -435,6 +436,8 @@ main{
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        font-size: 4.5vw;
+        margin-bottom: 3vw;
     }
     .principal-figure{
         width: 100%;
@@ -513,9 +516,22 @@ main{
     text-transform: uppercase;
     font-size: 2.7vw;
     font-family: "Sovereign";
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
     width: 55vw;
+}
+@media (max-width: 769px){
+    .how-to-play-text h2 {
+        font-size: 4.1vw;
+        text-align: right;
+        padding-right: 15vw;
+    }
+    .hierarchy-text p{
+        font-size: 2vw;
+        width: 60%;
+        margin-right: 10vw;
+       
+    }
 }
 
 /* MAIN BUTTONS SECTION*/
@@ -575,7 +591,6 @@ main{
     box-shadow: inset 0 0 #000;
     order: 4;
     transition: box-shadow ease 3s;
-
 }
 
 .buttons button:hover{

@@ -91,7 +91,7 @@ main{
 .header-bottom{
     display:flex;
     justify-content: center;
-    height: 37%;
+    height: 28vw;
     position: relative;
 }
 .header-bottom::after{
@@ -145,21 +145,43 @@ main{
 .about-game{
     position: absolute;
     top: 55%;
-    left: 42%;
-   
+    left: 38.8%;
+    width: 50vw;
+    display: flex;
 }
-.about-game-mobile {
-    display: none;
+.about-game-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30vw;
+    justify-content: space-between;
+    margin-right: 1vw;
 }
+.about-game-text h2{
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    
+}
+.about-game-text span{
+    width: 9vw;
+    height: 3px;
+    background-color: #000;
+}
+.about-game-text p {
+    text-align: right;
+    font-size: 1.05vw;
+    width: 92%;
+}
+
 .about-game img {
-    width: 49vw;
+    width: 21vw;
 }
 
 /* HEADER BOTTOM 769PX */
 
 @media (max-width:769px){
     .secondary-header{
-        height: 80vh;
+        height: 120vw;
     }
     .header-bottom{
         display: flex;
@@ -172,26 +194,39 @@ main{
         bottom: -2%;
         
     }
-    .about-game-mobile {
-        display: flex;
-        width: 80vw;
-        justify-content: flex-end;
-        margin-right: 3rem;
-    }
     .about-game {
-        display: none;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 61%;
+        width: 55vw;
+        display: flex;
+        align-items: flex-end;
     }
-    .about-game-mobile img {
-        width: 80%;
-        margin-top: 2rem;
+    .about-game-text {
+        width: 90vw;
+        margin-right: 0;
+    }
+    .about-game-text h2{
+        font-size: 4vw;
+        margin-top: 4vw;
 
+    }
+    .about-game-text span {
+        width: 35vw;
+    }
+    .about-game-text p {
+        font-size: 2.5vw;
+        width: 90%;
+    }
+    .about-game img {
+        width: 60vw;
     }
     .red-box{
         position: static;
         height: 60vh;
         margin-top: 15%;
         margin-right: 6%;
-        width: 50vw;
+        width: 60vw;
     }
     .red-box-h2{
         font-size: 5vw;
@@ -210,7 +245,7 @@ main{
 
 @media (max-width:440px){
         .secondary-header{
-            height: 80vh;
+            height: 150vw;
         }
         .header-bottom{
             display: flex;
@@ -219,37 +254,15 @@ main{
             justify-content: flex-start;
             max-height: 112vh;
         }
-        .about-game-mobile {
-            display: flex;
-            width: 100vw;
-            margin-top: 2rem;
-            margin-right: 6%;
-        }
-        .about-game {
-            display: none;
-        }
-        .about-game-mobile img {
-            width: 83%;
+        .header-bottom::after{
+            bottom: 0;
         }
         .red-box{
             width: 60vw;
             height: 50vh;
             margin-top: 12%;
         }
-        .red-box img {
-            width: 60vw;
-        }
-        .red-box-h2{
-            font-size: 7vw;
-        }
-        .red-box-paragraph{
-            font-size: 2.8vw;
-        }
-        .red-box-button{
-            font-size: 2.8vw;
-            width: 28vw;
-            height: 7vw;
-        }
+       
 }
 
 /* SECONDARY HEADER - STRUCTURE-BOX   */
@@ -329,8 +342,7 @@ main{
 @media (max-width:769px){
     .structure-box{
         justify-content: space-between;
-        height: 50vh;
-
+        height: 75vw;
         display: flex;
         
     }

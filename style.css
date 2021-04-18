@@ -697,7 +697,7 @@ footer{
     background-color: #FF5A56;
     position: relative;
     align-items: center;
-    height: 45.7vw;
+    height: 46vw;
     width: 67vw;
 }
 .left-box-upper-text {
@@ -776,11 +776,11 @@ footer{
 }
 .vader{
     position: absolute;
-    bottom: 2vw;
+    bottom: 1.7vw;
     left: 84%;
 }
 .vader img {
-    width: 39vw;
+    width: 40vw;
 }
 .right-box{
     width: 39vw;

@@ -540,7 +540,7 @@ main{
     position: relative;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10vw;
+    margin-bottom: 17vw;
     
     
 }
@@ -675,3 +675,208 @@ main{
         box-shadow: inset  -12vw 0  #D74430;
     }
 }
+/*  FOOTER */
+footer{
+    display: flex;
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF5A56;
+    position: relative;
+    align-items: center;
+    height: 45.7vw;
+    width: 67vw;
+}
+.left-box-upper-text {
+    width: 35vw;
+    margin-top: 7vw;
+   
+}
+.left-box-upper-text h2 {
+    color: #fff;
+    font-family: "Gilroy";
+    font-size: 2.7vw;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.left-box-upper-text p {
+    color:#fff;
+    font-size: 1vw;
+    font-weight: 300;
+    width: 78%;
+    margin-top: 2.6vw;
+
+}
+.download-app{
+    width: 35vw;
+    position: relative;
+    height: 8vw;
+    margin-top: 1.8vw;
+}
+.download-app button {
+   border: none;
+   box-shadow: none;
+   border-style: none;
+   background-color: #000;
+   height: 1vw;
+   border-radius: 10vw;
+   margin-right: 0.6vw;
+    
+}
+.download-app button:focus {
+    outline: none;
+}
+.download-app button:active {
+    transform: scale(0.99);
+}
+.download-app img {
+    width: 13.5vw;
+
+}
+.download-app::after{
+    content: "";
+    width: 28vw;
+    height: 5px;
+    background-color: #D74430;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.left-box-sw{
+    width: 35vw;
+    margin-top: 3vw;
+}
+.left-box-sw img {
+    width: 13.5vw;
+}
+.left-box-final-paragraph{
+    width: 35vw;
+   
+}
+.left-box-final-paragraph p {
+    color:#fff;
+    font-size: 1vw;
+    font-weight: 300;
+    width: 74%;
+    margin-top: 1.5vw;
+}
+.vader{
+    position: absolute;
+    bottom: 2vw;
+    left: 84%;
+}
+.vader img {
+    width: 39vw;
+}
+.right-box{
+    width: 39vw;
+    height: 46vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.right-box-paragraph{
+    width: 60%;
+    font-size: 0.8vw;
+    margin-bottom: 3vw;
+}
+@media (max-width:769px){
+    footer{
+        flex-direction: column;
+    }
+    .left-box{
+        width: 100vw;
+        height: 190vw;
+        align-items: center;
+    }
+    .left-box-upper-text {
+        width: 100vw;
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .left-box-upper-text h2 {
+        font-size: 14vw;
+        text-align: center;
+    }
+    .left-box-upper-text p {
+        font-size: 4vw;
+        font-weight: 300;
+        width: 83%;
+        margin-top: 2.6vw;
+        text-align: left;
+        margin-bottom: 3vw;
+       
+    }
+    .download-app{
+        width: 100vw;
+        position: relative;
+        height: unset;
+        margin-top: 1.8vw;
+        display: flex;
+        justify-content: center;
+        height: 25vw;
+
+    }
+    .download-app button {
+       height: 4vw;
+       margin-right:2vw;
+        
+    }
+    .download-app img {
+        width: 40vw;
+    }
+    .download-app::after{
+        width: 81vw;
+        height: 5px;
+        bottom: 4vw;
+        left: 8.5vw;
+        
+    }
+    .left-box-sw{
+        width: 100vw;
+        margin-top: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+    .left-box-sw img {
+        width: 45vw;
+    }
+    .left-box-final-paragraph{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .left-box-final-paragraph p {
+        font-size: 4vw;
+        width: 83%;
+        margin-top: 5vw;
+    }
+    .vader{
+        position: absolute;
+        bottom: -59vw;
+        left: 10%;
+    }
+    .vader img {
+        width: 80vw;
+    }
+    .right-box{
+        width: 100vw;
+        height: 70vw;
+      
+    
+    }
+    .right-box-paragraph{
+        width: 80%;
+        font-size: 2.3vw;
+        margin-bottom: 3vw;
+    }
+}
+
+

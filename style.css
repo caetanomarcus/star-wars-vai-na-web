@@ -433,13 +433,11 @@ main{
     height: 50%;
     position: relative;
 }
+.smaller-figure img {
+    width: 100%;
+    height: 100%;
+}
 
-.smaller-figure-hover{
-    opacity: 0;
-}
-.aumentar{
-    transform: scale(1.1);
-}
 
 
 
@@ -456,20 +454,17 @@ main{
         margin-left: auto;
         margin-right: auto;
         font-size: 4.5vw;
-        margin-bottom: 3vw;
+        margin-bottom: 4vw;
     }
     .principal-figure{
         width: 100%;
-     
     }
     
     .smaller-figure{
         width: 100%;
-        height: fit-content;
+        height: 100%;
         flex-wrap: nowrap;
-        flex-direction: column;
-        display: flex;
-       
+        flex-direction: column;  
     }
     .smaller-figure figure {
        width: 100%;

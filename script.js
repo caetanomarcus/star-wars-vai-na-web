@@ -9,7 +9,7 @@ function ZoonIn(){
 RedIMG.src = "assets/Grupo novos graficos.svg";
 RedIMG.style.position ='absolute';
 RedIMG.style.right = '0';
-RedIMG.style.top = '-5%';
+RedIMG.style.top = '-4%';
 RedIMG.style.width = '100%';
 RedIMG.style.transform = 'scale(1.1)';
 RedIMG.style.zIndex = '10';

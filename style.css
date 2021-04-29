@@ -1,100 +1,111 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 63,5%;
+    font-size: 63, 5%;
 }
+
 @font-face {
-    font-family:"Gilroy" ;
+    font-family: "Gilroy";
     src: url(assets/Gilroy-ExtraBold.ttf);
 }
+
 @font-face {
     font-family: "Sovereign";
     src: url(assets/Sovereign.otf);
 }
-               /* HEADER */
 
-header{
+
+/* HEADER */
+
+header {
     height: auto;
 }
 
-main{
+main {
     background-color: #2D2D2D;
-    
 }
 
 
 /* PRINCIPAL HEADER : STAR WARS AND THE SITH IMAGE */
-.principal-header{
+
+.principal-header {
     background-image: url(assets/star\ uó\ topo@2x.png);
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
     height: 43vw;
     max-width: 100vw;
     position: relative;
-
-
 }
+
 .principal-header-figures {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-   
 }
-.principal-header-figures figure{
+
+.principal-header-figures figure {
     width: 100%;
 }
+
 .star-img {
     position: absolute;
     bottom: 31%;
     left: 19%;
     width: 25vw;
 }
-.kylo-img{
+
+.kylo-img {
     position: absolute;
     right: 19%;
     top: 0;
-    z-index: 9;  
+    z-index: 9;
     width: 71vw;
 }
+
 .wars-img {
     position: absolute;
     right: 10%;
     bottom: 31%;
     width: 25vw;
 }
-.g4-img{
+
+.g4-img {
     position: absolute;
     top: 78%;
     right: 12%;
     width: 9vw;
     z-index: 10;
 }
-@media (max-width:768px){
-    .g4-img{
+
+@media (max-width:768px) {
+    .g4-img {
         width: 15vw;
         right: 7%;
     }
 }
 
+
 /* SECONDARY HEADER - HEADER BOTTOM : ABOUT*/
 
-.secondary-header{
+.secondary-header {
     background-image: url(assets/sta_uo_robot@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 75vw;
     position: relative;
 }
-.header-bottom{
-    display:flex;
+
+.header-bottom {
+    display: flex;
     justify-content: center;
     height: 28vw;
     position: relative;
 }
-.header-bottom::after{
+
+.header-bottom::after {
     content: "";
     border: #707070 solid 2.7px;
     background-color: #707070;
@@ -104,7 +115,8 @@ main{
     bottom: -20%;
     left: 14%;
 }
-.red-box{
+
+.red-box {
     background-image: url(assets/strom\ trupe\ red.png);
     position: absolute;
     top: -4%;
@@ -118,37 +130,46 @@ main{
     justify-content: center;
     flex-direction: column;
 }
-.red-box-h2{
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 2.5vw;
-   font-weight: 600;
-   width: 50%;
-   height: 33%;
+
+.red-box-h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 600;
+    width: 50%;
+    height: 33%;
 }
-.red-box-paragraph{
+
+.red-box-paragraph {
     font-weight: 300;
     font-size: 1vw;
     width: 85%;
     height: 33%;
 }
-.red-box-button{
+
+.red-box-button {
     font-size: 1vw;
     color: #fff;
-    background-color: rgb(255,255,255, 0);
+    background-color: rgb(255, 255, 255, 0);
     width: 10vw;
     height: 2.5vw;
     border: white solid 2px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.about-game{
+.red-box-button:active {
+    transform: scale(0.99);
+}
+
+.about-game {
     position: absolute;
     top: 55%;
     left: 38.8%;
     width: 50vw;
     display: flex;
 }
+
 .about-game-text {
     display: flex;
     flex-direction: column;
@@ -157,16 +178,18 @@ main{
     justify-content: space-between;
     margin-right: 1vw;
 }
-.about-game-text h2{
+
+.about-game-text h2 {
     text-transform: uppercase;
     font-size: 1.6vw;
-    
 }
-.about-game-text span{
+
+.about-game-text span {
     width: 9vw;
     height: 3px;
     background-color: #000;
 }
+
 .about-game-text p {
     text-align: right;
     font-size: 1.05vw;
@@ -177,22 +200,22 @@ main{
     width: 21vw;
 }
 
+
 /* HEADER BOTTOM 769PX */
 
-@media (max-width:769px){
-    .secondary-header{
+@media (max-width:769px) {
+    .secondary-header {
         height: 120vw;
     }
-    .header-bottom{
+    .header-bottom {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
         height: 122vh;
     }
-    .header-bottom::after{
+    .header-bottom::after {
         bottom: -2%;
-        
     }
     .about-game {
         flex-direction: column-reverse;
@@ -208,10 +231,9 @@ main{
         width: 90vw;
         margin-right: 0;
     }
-    .about-game-text h2{
+    .about-game-text h2 {
         font-size: 4vw;
         margin-top: 4vw;
-
     }
     .about-game-text span {
         width: 35vw;
@@ -223,89 +245,97 @@ main{
     .about-game img {
         width: 60vw;
     }
-    .red-box{
+    .red-box {
         position: static;
         height: 60vh;
         margin-top: 15%;
         margin-right: 6%;
         width: 60vw;
     }
-    .red-box-h2{
+    .red-box-h2 {
         font-size: 5vw;
     }
-    .red-box-paragraph{
+    .red-box-paragraph {
         font-size: 2vw;
     }
-    .red-box-button{
+    .red-box-button {
         font-size: 2vw;
         width: 20vw;
         height: 5vw;
     }
 }
 
+
 /* HEADER BOTTOM 440PX */
 
-@media (max-width:440px){
-        .secondary-header{
-            height: 140vw;
-        }
-        .header-bottom{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-start;
-            max-height: 112vh;
-        }
-        .header-bottom::after{
-            bottom: 0;
-        }
-        .red-box{
-            width: 60vw;
-            height: 50vh;
-            margin-top: 12%;
-        }
-       
+@media (max-width:440px) {
+    .secondary-header {
+        height: 140vw;
+    }
+    .header-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        max-height: 112vh;
+    }
+    .header-bottom::after {
+        bottom: 0;
+    }
+    .red-box {
+        width: 60vw;
+        height: 50vh;
+        margin-top: 12%;
+    }
 }
+
 
 /* SECONDARY HEADER - STRUCTURE-BOX   */
 
-.structure-box{
+.structure-box {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 57vw;
 }
-.sith2-img{
+
+.sith2-img {
     margin-left: 30%;
     width: 43vw;
 }
-.sith2{
+
+.sith2 {
     margin-left: 3%;
     display: flex;
 }
-.rey{
+
+.rey {
     margin-right: 8%;
 }
-.rey-img{
+
+.rey-img {
     margin-top: 25%;
     width: 21vw;
 }
-.structure-text{
+
+.structure-text {
     height: 59%;
     width: 27%;
 }
-.h2-first{
+
+.h2-first {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-size: 3.7vw;
     display: inline-block;
     text-align: right;
-    font-weight:600;
+    font-weight: 600;
     width: 27vw;
     height: 7%;
     line-height: 0.5;
 }
-.h2-de{
+
+.h2-de {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-size: 3.7vw;
@@ -316,16 +346,18 @@ main{
     font-weight: 600;
     height: 7%;
 }
-.h2-second{
+
+.h2-second {
     font-family: "Sovereign";
     text-transform: uppercase;
     font-size: 3.5vw;
-    display:inline-block;
+    display: inline-block;
     text-align: right;
     font-weight: 700;
     height: 15%;
     width: 30%;
 }
+
 .structure-text p {
     text-align: right;
     text-transform: uppercase;
@@ -334,34 +366,34 @@ main{
     width: 27vw;
     cursor: pointer;
 }
-.structure-text p:hover{
-    color:#fff;
+
+.structure-text p:hover {
+    color: #fff;
     background-color: #D74430;
 }
 
+
 /* STRUCTURE-BOX 769PX */
 
-@media (max-width:769px){
-    .structure-box{
+@media (max-width:769px) {
+    .structure-box {
         justify-content: space-between;
         height: 75vw;
         display: flex;
         position: relative;
-        
     }
-
-    .sith2-img{ 
+    .sith2-img {
         width: 52vw;
         position: absolute;
         top: 10vw;
         left: -26vw;
     }
-    .sith2{
+    .sith2 {
         margin: 0;
         justify-content: flex-start;
         width: 5vw;
     }
-    .rey{
+    .rey {
         width: 20vw;
     }
     .rey-img {
@@ -369,17 +401,17 @@ main{
         position: absolute;
         bottom: 12vw;
     }
-    .h2-first{
+    .h2-first {
         font-size: 4vw;
         width: 40vw;
     }
-    .h2-de{
+    .h2-de {
         font-size: 4vw;
     }
-    .h2-second{
+    .h2-second {
         font-size: 3.8vw;
     }
-    .structure-text{
+    .structure-text {
         width: 40vw;
         height: 80%;
         margin-left: 30vw;
@@ -390,64 +422,64 @@ main{
     }
 }
 
+
 /* ATRIBUTTES --- MAIN --- */
 
-.atributtes{
+.atributtes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.atributtes-box{
+
+.atributtes-box {
     display: flex;
     width: 85%;
-    
 }
+
 .atributtes h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 2.6vw ;
+    font-size: 2.6vw;
     font-weight: 900;
     height: 17vw;
     padding-top: 10vw;
     margin-right: 60%;
 }
-.principal-figure{
+
+.principal-figure {
     width: 50%;
     position: relative;
-  
 }
+
 .principal-figure-img {
     width: 100%;
     height: 100%;
-    
 }
 
-.smaller-figure{
+.smaller-figure {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
 }
+
 .smaller-figure figure {
     width: 50%;
     height: 50%;
     position: relative;
 }
+
 .smaller-figure img {
     width: 100%;
     height: 100%;
 }
 
 
-
-
-
 /* ATRIBUTTES-BOX 769PX */
 
-@media (max-width:769px){
-    .atributtes-box{
+@media (max-width:769px) {
+    .atributtes-box {
         flex-direction: column;
-        
     }
     .atributtes h2 {
         text-align: center;
@@ -456,68 +488,72 @@ main{
         font-size: 4.5vw;
         margin-bottom: 4vw;
     }
-    .principal-figure{
+    .principal-figure {
         width: 100%;
     }
-    
-    .smaller-figure{
+    .smaller-figure {
         width: 100%;
         height: 100%;
         flex-wrap: nowrap;
-        flex-direction: column;  
+        flex-direction: column;
     }
     .smaller-figure figure {
-       width: 100%;
+        width: 100%;
     }
     .smaller-figure img {
         width: 100%;
         height: 100%;
     }
-    
 }
-@media (max-width:769px){
-    header{
+
+@media (max-width:769px) {
+    header {
         height: 196vh;
     }
 }
-@media (max-width:440px){
-    header{
+
+@media (max-width:440px) {
+    header {
         height: 170vh;
     }
 }
 
-.hierarchy{
+.hierarchy {
     width: 85%;
     margin-top: 3%;
     border: lawngreen;
 }
+
 .hierarchy img {
     width: 100%;
 }
-@media (max-width: 769px){
+
+@media (max-width: 769px) {
     .hierarchy {
         width: 100%;
     }
 }
+
 .hierarchy-text {
     display: flex;
     justify-content: flex-end;
 }
 
-.hierarchy-text p{
-    color:#fff;
+.hierarchy-text p {
+    color: #fff;
     text-align: right;
     font-weight: 300;
     font-size: 1vw;
-    width:  53%;
+    width: 53%;
 }
-.how-to-play{
+
+.how-to-play {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 20vw;
-   
 }
+
 .how-to-play-text h2 {
     color: #fff;
     text-transform: uppercase;
@@ -527,47 +563,46 @@ main{
     text-align: left;
     width: 55vw;
 }
-@media (max-width: 769px){
+
+@media (max-width: 769px) {
     .how-to-play-text h2 {
         font-size: 4.1vw;
         text-align: right;
         padding-right: 15vw;
     }
-    .hierarchy-text p{
+    .hierarchy-text p {
         font-size: 2vw;
         width: 60%;
         margin-right: 10vw;
-       
     }
 }
 
+
 /* MAIN BUTTONS SECTION*/
 
-.main-buttons{
+.main-buttons {
     position: relative;
     display: flex;
     justify-content: space-around;
     margin-bottom: 17vw;
-    
-    
 }
+
 .buttons {
     display: flex;
     justify-content: space-around;
     width: 60vw;
     margin-left: 25vw;
     margin-top: 5vw;
-   
-  
 }
-.buttons h3{
+
+.buttons h3 {
     font-weight: 300;
     font-size: 2.6vw;
     text-align: center;
     order: 1;
-
 }
-.buttons button{
+
+.buttons button {
     color: #fff;
     background-color: #000;
     text-transform: uppercase;
@@ -580,9 +615,9 @@ main{
     margin-top: 2vw;
     order: 2;
     transition: box-shadow ease 3s;
-    
-    
+    cursor: pointer;
 }
+
 .buttons p {
     font-size: 1vw;
     text-align: center;
@@ -590,7 +625,8 @@ main{
     margin-top: 2vw;
     order: 3;
 }
-.buttons span{
+
+.buttons span {
     width: 6vw;
     height: 6px;
     background-color: #000;
@@ -600,57 +636,63 @@ main{
     transition: box-shadow ease 3s;
 }
 
-.buttons button:hover{
-    box-shadow: inset  -14vw 0  #D74430, 2px 0 2px #000, 0 4px 4px #707070;
+.buttons button:hover {
+    box-shadow: inset -14vw 0 #D74430, 2px 0 2px #000, 0 4px 4px #707070;
     transition: box-shadow 1s ease;
     -webkit-transition: box-shadow 1s ease;
     -moz-transition: box-shadow 1s ease;
     -o-transition: box-shadow 1s ease;
 }
-.buttons button:hover ~ span {
-    box-shadow: inset  -6vw 0  #D74430;
+
+.buttons button:hover~span {
+    box-shadow: inset -6vw 0 #D74430;
     transition: box-shadow 1s ease-in-out;
     -webkit-transition: box-shadow 1s ease-in-out;
-    -moz-transition: box-shadow 1s ease-in-out ;
+    -moz-transition: box-shadow 1s ease-in-out;
     -o-transition: box-shadow 1s ease-in-out;
 }
-.buttons button:hover ~ h3{
+
+.buttons button:hover~h3 {
     font-weight: 900;
 }
-.download-01{
+
+.buttons-download {
     width: 33.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.download-02{
-   width: 33.33%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.download-03{
+
+.buttons-choose {
     width: 33.33%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.black-cloack{
+
+.buttons-explore {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.black-cloack {
     position: absolute;
     top: -21vw;
     left: 7vw;
 }
+
 .black-cloack img {
     width: 28vw;
 }
 
-@media (max-width:769px){
-    .black-cloack{
+@media (max-width:769px) {
+    .black-cloack {
         left: -40%;
     }
-    .black-cloack img{
+    .black-cloack img {
         width: 100vw;
-        
     }
     .buttons {
         flex-direction: column;
@@ -662,12 +704,12 @@ main{
         font-size: 7vw;
         margin-top: 4vw;
     }
-    .buttons button{
+    .buttons button {
         width: 37vw;
         height: 11vw;
         font-size: 4vw;
     }
-    .buttons p{
+    .buttons p {
         font-size: 3vw;
         width: 200%;
     }
@@ -675,18 +717,22 @@ main{
         height: 4px;
         width: 12vw;
     }
-    .buttons button:hover{
-        box-shadow: inset  -37vw 0  #D74430, 2px 0 2px #000, 0 4px 4px #707070;
+    .buttons button:hover {
+        box-shadow: inset -37vw 0 #D74430, 2px 0 2px #000, 0 4px 4px #707070;
     }
-    .buttons button:hover ~ span {
-        box-shadow: inset  -12vw 0  #D74430;
+    .buttons button:hover~span {
+        box-shadow: inset -12vw 0 #D74430;
     }
 }
+
+
 /*  FOOTER */
-footer{
+
+footer {
     display: flex;
 }
-.left-box{
+
+.left-box {
     display: flex;
     flex-direction: column;
     background-color: #FF5A56;
@@ -695,11 +741,12 @@ footer{
     height: 46vw;
     width: 67vw;
 }
+
 .left-box-upper-text {
     width: 35vw;
     margin-top: 7vw;
-   
 }
+
 .left-box-upper-text h2 {
     color: #fff;
     font-family: "Gilroy";
@@ -707,41 +754,46 @@ footer{
     text-transform: uppercase;
     font-weight: 300;
 }
+
 .left-box-upper-text p {
-    color:#fff;
+    color: #fff;
     font-size: 1vw;
     font-weight: 300;
     width: 78%;
     margin-top: 2.6vw;
-
 }
-.download-app{
+
+.download-app {
     width: 35vw;
     position: relative;
     height: 8vw;
     margin-top: 1.8vw;
 }
+
 .download-app button {
-   border: none;
-   box-shadow: none;
-   border-style: none;
-   background-color: #000;
-   height: 1vw;
-   border-radius: 10vw;
-   margin-right: 0.6vw;
-    
+    border: none;
+    box-shadow: none;
+    border-style: none;
+    background-color: #000;
+    height: 1vw;
+    border-radius: 10vw;
+    margin-right: 0.6vw;
+    cursor: pointer;
 }
+
 .download-app button:focus {
     outline: none;
 }
+
 .download-app button:active {
     transform: scale(0.99);
 }
+
 .download-app img {
     width: 13.5vw;
-
 }
-.download-app::after{
+
+.download-app::after {
     content: "";
     width: 28vw;
     height: 5px;
@@ -749,52 +801,58 @@ footer{
     position: absolute;
     bottom: 0;
     left: 0;
-    
 }
-.left-box-sw{
+
+.left-box-sw {
     width: 35vw;
     margin-top: 3vw;
 }
+
 .left-box-sw img {
     width: 13.5vw;
 }
-.left-box-final-paragraph{
+
+.left-box-final-paragraph {
     width: 35vw;
-   
 }
+
 .left-box-final-paragraph p {
-    color:#fff;
+    color: #fff;
     font-size: 1vw;
     font-weight: 300;
     width: 74%;
     margin-top: 1.5vw;
 }
-.vader{
+
+.vader {
     position: absolute;
     bottom: 1.7vw;
     left: 84%;
 }
+
 .vader img {
     width: 40vw;
 }
-.right-box{
+
+.right-box {
     width: 39vw;
     height: 46vw;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
 }
-.right-box-paragraph{
+
+.right-box-paragraph {
     width: 60%;
     font-size: 0.8vw;
     margin-bottom: 3vw;
 }
-@media (max-width:769px){
-    footer{
+
+@media (max-width:769px) {
+    footer {
         flex-direction: column;
     }
-    .left-box{
+    .left-box {
         width: 100vw;
         height: 190vw;
         align-items: center;
@@ -805,7 +863,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-       
     }
     .left-box-upper-text h2 {
         font-size: 14vw;
@@ -818,9 +875,8 @@ footer{
         margin-top: 2.6vw;
         text-align: left;
         margin-bottom: 3vw;
-       
     }
-    .download-app{
+    .download-app {
         width: 100vw;
         position: relative;
         height: unset;
@@ -828,24 +884,21 @@ footer{
         display: flex;
         justify-content: center;
         height: 25vw;
-
     }
     .download-app button {
-       height: 4vw;
-       margin-right:2vw;
-        
+        height: 4vw;
+        margin-right: 2vw;
     }
     .download-app img {
         width: 40vw;
     }
-    .download-app::after{
+    .download-app::after {
         width: 81vw;
         height: 5px;
         bottom: 4vw;
         left: 8.5vw;
-        
     }
-    .left-box-sw{
+    .left-box-sw {
         width: 100vw;
         margin-top: 3vw;
         display: flex;
@@ -854,18 +907,17 @@ footer{
     .left-box-sw img {
         width: 45vw;
     }
-    .left-box-final-paragraph{
+    .left-box-final-paragraph {
         width: 100vw;
         display: flex;
         justify-content: center;
-       
     }
     .left-box-final-paragraph p {
         font-size: 4vw;
         width: 83%;
         margin-top: 5vw;
     }
-    .vader{
+    .vader {
         position: absolute;
         bottom: -59vw;
         left: 10%;
@@ -873,17 +925,13 @@ footer{
     .vader img {
         width: 80vw;
     }
-    .right-box{
+    .right-box {
         width: 100vw;
         height: 70vw;
-      
-    
     }
-    .right-box-paragraph{
+    .right-box-paragraph {
         width: 80%;
         font-size: 2.3vw;
         margin-bottom: 3vw;
     }
 }
-
-

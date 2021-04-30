@@ -129,6 +129,8 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .red-box-h2 {
@@ -205,17 +207,17 @@ main {
 
 @media (max-width:769px) {
     .secondary-header {
-        height: 120vw;
+        height: 150vw;
     }
     .header-bottom {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
-        height: 122vh;
+        height: 180vw;
     }
     .header-bottom::after {
-        bottom: -2%;
+        bottom: -5vw;
     }
     .about-game {
         flex-direction: column-reverse;
@@ -247,16 +249,18 @@ main {
     }
     .red-box {
         position: static;
-        height: 60vh;
+        height: 100%;
         margin-top: 15%;
         margin-right: 6%;
         width: 60vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     .red-box-h2 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     .red-box-paragraph {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .red-box-button {
         font-size: 2vw;
@@ -277,14 +281,10 @@ main {
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
-        max-height: 112vh;
-    }
-    .header-bottom::after {
-        bottom: 0;
+        height: 175vw;
     }
     .red-box {
         width: 60vw;
-        height: 50vh;
         margin-top: 12%;
     }
 }
@@ -293,20 +293,26 @@ main {
 /* SECONDARY HEADER - STRUCTURE-BOX   */
 
 .structure-box {
+    height: 57vw;
+    position: absolute;
+    top: 80vw;
+}
+
+.structure-box-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 57vw;
+    height: 70%;
 }
 
 .sith2-img {
     margin-left: 30%;
-    width: 43vw;
+    width: 45vw;
 }
 
 .sith2 {
     margin-left: 3%;
-    display: flex;
 }
 
 .rey {
@@ -314,13 +320,14 @@ main {
 }
 
 .rey-img {
-    margin-top: 25%;
+    margin-top: 20%;
     width: 21vw;
 }
 
 .structure-text {
-    height: 59%;
+    height: 30vw;
     width: 27%;
+    margin-bottom: 5%;
 }
 
 .h2-first {
@@ -377,29 +384,27 @@ main {
 
 @media (max-width:769px) {
     .structure-box {
-        justify-content: space-between;
-        height: 75vw;
-        display: flex;
+        height: 100vw;
         position: relative;
+        top: 35vw;
+    }
+    .structure-box-container {
+        position: absolute;
+        bottom: 50vw;
     }
     .sith2-img {
         width: 52vw;
         position: absolute;
-        top: 10vw;
-        left: -26vw;
+        bottom: -23vw;
+        right: 20vw;
     }
     .sith2 {
-        margin: 0;
-        justify-content: flex-start;
-        width: 5vw;
-    }
-    .rey {
-        width: 20vw;
+        margin: unset;
     }
     .rey-img {
         width: 25vw;
         position: absolute;
-        bottom: 12vw;
+        bottom: -23vw;
     }
     .h2-first {
         font-size: 4vw;
@@ -407,17 +412,20 @@ main {
     }
     .h2-de {
         font-size: 4vw;
+        width: 11%;
+        margin-left: 50%;
     }
     .h2-second {
         font-size: 3.8vw;
     }
     .structure-text {
         width: 40vw;
-        height: 80%;
-        margin-left: 30vw;
+        height: 40%;
+        margin-left: 35vw;
+        margin-top: 60%;
     }
     .structure-text p {
-        font-size: 1.8vw;
+        font-size: 2vw;
         width: 38vw;
     }
 }
@@ -503,18 +511,6 @@ main {
     .smaller-figure img {
         width: 100%;
         height: 100%;
-    }
-}
-
-@media (max-width:769px) {
-    header {
-        height: 196vh;
-    }
-}
-
-@media (max-width:440px) {
-    header {
-        height: 170vh;
     }
 }
 
